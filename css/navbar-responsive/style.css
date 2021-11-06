@@ -1,0 +1,160 @@
+/* reset */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin-top: 70px;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgb(29, 29, 233);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-bar {
+    width: 70%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f1f1f1;
+
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 30px;
+    line-height: 60px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    line-height: 60px;
+    margin-right: 30px;
+}
+
+.nav-menu-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 5px 1px rgba(0, 247, 255, 0.363);
+    background-color: #00854d63;
+}
+
+.nav-menu-link {
+    display: block;
+    text-align: center;
+    width: 120px;
+    color: white;
+}
+
+.nav-menu-item:hover {
+    transition: all 0.12s;
+    background: rgba(0, 247, 255, 0.363);
+    box-shadow: 0px 1px 5px 1px #000063dc;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;  
+    background-image: url('cold-house.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* -------------------(mobile) ------------------- */
+.nav-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        visibility: visible;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-toggle:active {
+        transition: all 0.07s;
+        border: 1.5px double;
+        font-size: 1.6rem;
+    } 
+    
+    body {
+        margin-top: 60px;
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: 50px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        padding: 0 20px;
+        line-height: 50px;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        height: calc(100% - 60px);
+        display: table-column;
+        overflow: auto;
+        line-height: 50px;
+        margin-right: 0;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    .nav-menu-open {
+        visibility: visible;
+        transition: 0.5s;
+    }
+
+    .nav-menu-item {
+        border-radius: 0;
+        overflow: hidden;
+        box-shadow: 0px 1px 5px 1px rgba(0, 247, 255, 0.363);
+        background-color: #444;
+    }
+    
+    .nav-menu-link {
+        width: 100%;
+    }
+    
+    .nav-menu-link:hover {
+        color: #444;
+        font-weight: bold;
+    }
+    
+    .nav-menu-item:hover {
+        transition: all 0.12s;
+        background: #00ff95;
+        box-shadow: 0px 1px 5px 1px #000063dc;
+        color: #444;
+    }
+}
