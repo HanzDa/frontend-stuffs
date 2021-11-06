@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.cards-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+}
+
+.c1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.c2 {
+    background-color: hsl(184, 100%, 22%)
+}
+.c3 {
+    background-color: hsl(179, 100%, 13%)
+}
+
+.card {
+    min-width: 300px;
+    max-height: 700px;
+    padding: 45px;
+    color: hsla(0, 0%, 100%, 0.75)
+}
+.card img {
+    margin-bottom: 30px;
+}
+.card h4 {
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+.card p {
+    margin-bottom: 30px;
+    letter-spacing: .6px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.btn-learn-more {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+    color:hsl(179, 100%, 13%)
+}
+
+.btn-learn-more:active {
+    box-shadow: 1px 3px 2px #555;
+    background-color: hsla(0, 0%, 100%, 0.75)
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .cards-container {
+    top: 0;
+    transform: translate(-50%, 0);
+    display: block;
+    }
+    .attribution {
+        visibility: hidden;
+    }
+}
