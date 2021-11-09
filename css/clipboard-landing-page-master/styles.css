@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Barlow+Semi+Condensed:wght@500&family=Big+Shoulders+Display:wght@700&family=Red+Hat+Display:wght@500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url('images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+/* general paragraphs and buttons */
+.container {
+    width: 90%;
+    margin: 0 auto 80px auto;
+    text-align: center;
+}
+
+.container img {
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.center-container {
+    max-width: 575px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.motto {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: hsl(210, 10%, 33%);
+}
+
+.description {
+    font-size: 14px;
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 25px;
+}
+
+.download-button {
+    font-size: 14px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px;
+    color: #fff;
+}
+
+.download-button.ios {
+    background-color: hsl(171, 66%, 44%);
+}
+
+.download-button.mac {
+    background-color: hsl(233, 100%, 69%)
+}
+
+/* desktop part */
+.desktop-container {
+    margin-bottom: 80px;
+}
+
+.desktop {
+    display: flex;
+    gap: 8%;
+    align-items: center;
+}
+
+.desktop img {
+    width: 50%
+}
+
+.desktop div {
+    margin-right: 100px
+}
+
+.sub-title {
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 5px;
+}
+
+/* devices part */
+.container .mobile-devices {
+    width: 100%;
+}
+
+/* supercharge workflow */
+.item-tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-tools .tool {
+    width: 100%;
+}
+.tool:nth-of-type(2) {
+    padding: 0 50px;
+}
+
+
+
+/* footer */
+.footer {
+    background-color: rgba(211, 211, 211, 0.3);
+    box-shadow: 0 -2px 5px rgb(225, 225, 225);
+    padding: 25px 6%;
+}
+
+.footer .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-info img {
+    width: 20px
+}
+
+.info-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 400px;
+    margin: 0 15% 0 8%;
+    list-style: none;
+    padding: 0;
+}
+
+.info-links a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    padding: 2px 5px;
+}
+
+.social-media {
+    display: flex;
+    gap: 50px;
+}
+/* 
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+*/
+
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;    
+}
+.attribution a { color: hsl(228, 45%, 44%); }
